@@ -25,8 +25,7 @@ test.describe('Date Picker Tests', () => {
     const actualContent = await page.locator('#post-body-1307673142697428135').innerText();
     console.log('Actual content inside the locator:', actualContent);
 
-    // Assert that the selected date is reflected correctly on the page (increased timeout)
-  //  await expect(page.locator('#datepicker')).toHaveText('09/01/2024', { timeout: 10000 });
+    
   });
 
   // Scenario 2: Select a different date (15th October 2025) and verify
@@ -52,9 +51,7 @@ test.describe('Date Picker Tests', () => {
     const actualContent = await page.locator('#post-body-1307673142697428135').innerText();
     console.log('Actual content inside the locator:', actualContent);
 
-    // Assert that the selected date is reflected correctly on the page (increased timeout)
-   // await expect(page.locator('#post-body-1307673142697428135')).toContainText('Date: 10/15/2025', { timeout: 10000 });
+   
   });
 
-  // Other scenarios continue...
 });
